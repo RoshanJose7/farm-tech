@@ -6,7 +6,7 @@
 trigger:
 - master
 variables:
-  uiSources: 'client'
+  uiSource: 'client'
   uiBuild: '$(uiSource)/build'
 
 pool:
