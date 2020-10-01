@@ -13,19 +13,19 @@ export default function ContactPage() {
 	function handleSubmit(e) {
 		e.preventDefault();
 
-		// try {
-		// 	fetch(`/api/formdata`, {
-		// 		method: 'POST',
-		// 		headers: {
-		// 			'Content-Type': 'application/json'
-		// 		},
-		// 		body: JSON.stringify(data)
-		// 	});
+		try {
+			fetch(`http://localhost:3001/api/formdata`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data)
+			});
 
-		// 	alert('Request Sent!!!');
-		// } catch (e) {
-		// 	console.log(e);
-		// }
+			alert('Request Sent!!!');
+		} catch (e) {
+			console.log(e);
+		}
 	}
 
 	function handleChange(e) {
