@@ -3,6 +3,5 @@
     "node_modules{,/**}",
     ".vscode{,/**}"
   ],
-  "appService.defaultWebAppToDeploy": "/subscriptions/ee76af4e-b970-424f-a9fe-34a889580308/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/farm-tech",
   "appService.deploySubpath": "."
 }
