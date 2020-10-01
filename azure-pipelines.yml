@@ -5,6 +5,9 @@
 
 trigger:
 - master
+variables:
+  uiSources: client
+  uiBuild: $(uiSource)/build
 
 pool:
   vmImage: 'ubuntu-latest'
