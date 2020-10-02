@@ -14,7 +14,7 @@ export default function ContactPage() {
 		e.preventDefault();
 
 		try {
-			fetch(`http://localhost:3001/api/formdata`, {
+			fetch('localhost:3001/api/formdata', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'

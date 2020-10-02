@@ -55,8 +55,8 @@ Get money by giving your dryland for rent / Lease
 				<div id='home-contact-content' />
 				<h1>CONTACT US</h1>
 				<p>
-					<p>Contact us on +91-7338095085</p>
-					<p>mail us on agritech@gmail.com</p>
+					<span>Contact us on +91-7338095085</span>
+					<span>mail us on agritech@gmail.com</span>
 				</p>
 				<div className='button-holder'>
 					<TransparentButton title='Contact' link='#' isTransparent={true} />

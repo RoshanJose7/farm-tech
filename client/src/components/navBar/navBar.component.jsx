@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NavButton from '../customButton/navButton.component';
+// import NavButton from '../customButton/navButton.component';
 import './navBar.styles.scss';
 
 const NavBar = () => {
@@ -52,11 +52,14 @@ const NavBar = () => {
 				<Link to='/contact'>
 					<li>Contact</li>
 				</Link>
-				<li>
+				<Link to='/commodities'>
+					<li>Commodities</li>
+				</Link>
+				{/* <li>
 					<NavButton title='TAKE ACTION' link='#'>
 						Take Action
 					</NavButton>
-				</li>
+				</li> */}
 			</ul>
 			<div id='burger'>
 				<div className='line1'></div>

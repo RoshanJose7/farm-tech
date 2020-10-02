@@ -5,6 +5,7 @@ import AboutPage from './pages/aboutPage/aboutPage.pages';
 import HomePage from './pages/homePage/homePage.pages';
 import ContactPage from './pages/contactPage/contactPage.pages';
 import ServicesPage from './pages/servicesPage/servicesPage.pages';
+import CommoditiesPage from './pages/commoditiesPage/commodities.pages';
 import Footer from './components/footer/footer.component';
 import './index.scss';
 import './responsive.styles.scss';
@@ -19,6 +20,7 @@ function App() {
 					<Route path='/about' component={AboutPage} />
 					<Route path='/contact' component={ContactPage} />
 					<Route path='/services' component={ServicesPage} />
+					<Route path='/commodities' component={CommoditiesPage} />
 				</Switch>
 				<Footer />
 			</div>
