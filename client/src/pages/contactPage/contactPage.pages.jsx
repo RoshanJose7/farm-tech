@@ -12,20 +12,18 @@ export default function ContactPage() {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-
-		try {
-			fetch('localhost:3001/api/formdata', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(data)
-			});
-
-			alert('Request Sent!!!');
-		} catch (e) {
-			console.log(e);
-		}
+		fetch('http://localhost:3001/api/formdata', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(data)
+		})
+			.then(res => {
+				alert('Request Sent!!!');
+				console.log(res);
+			})
+			.catch(err => console.log(err));
 	}
 
 	function handleChange(e) {

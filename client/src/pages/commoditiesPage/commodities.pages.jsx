@@ -14,7 +14,6 @@ export default function Commodities() {
 			.then(res => res.json())
 			.then(api => setData(api.records))
 			.catch(err => console.log(err));
-		console.log(data);
 	}, [!data]);
 
 	return (
