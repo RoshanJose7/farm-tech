@@ -12,7 +12,7 @@ export default function ContactPage() {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		fetch('http://localhost:3001/api/formdata', {
+		fetch('/api/formdata', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
