@@ -86,6 +86,9 @@ export default function ContactPage() {
 						</button>
 					</form>
 				</div>
+			</div>
+
+			<div id='map'>
 				<Map />
 			</div>
 		</div>

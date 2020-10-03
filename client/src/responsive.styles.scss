@@ -140,6 +140,9 @@
 				}
 			}
 		}
+		#map {
+			margin: 20px 0 0 10px;
+		}
 	}
 	#services {
 		#services-head {
@@ -192,4 +195,7 @@
 }
 
 @media screen and(max-width: 500px) {
+	#map {
+		margin: 20px 0 0 10px;
+	}
 }
