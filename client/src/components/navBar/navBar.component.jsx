@@ -22,6 +22,8 @@ const NavBar = () => {
 				nav.classList.toggle('open');
 				// Burger Animation
 				burger.classList.toggle('toggle');
+				//to stop scrolling
+				body.classList.toggle('fixed-position');
 			});
 		});
 
