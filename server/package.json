@@ -1,7 +1,6 @@
 {
-	"name": "new-folder",
+	"name": "farm-tech-blog-backend",
 	"version": "1.0.0",
-	"description": "a test project",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",

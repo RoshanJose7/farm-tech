@@ -1,6 +1,6 @@
 {
-	"name": "farm-tech",
-	"version": "0.1.0",
+	"name": "farm-tech-blog",
+	"version": "1.0.0",
 	"private": true,
 	"proxy": "http://localhost:3001",
 	"dependencies": {
