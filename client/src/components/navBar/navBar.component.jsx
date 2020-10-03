@@ -21,12 +21,17 @@ const NavBar = () => {
 				nav.classList.toggle('open');
 				// Burger Animation
 				burger.classList.toggle('toggle');
-				//to stop scrolling
-				body.classList.toggle('fixed-position');
 			});
 		});
 
 		burger.addEventListener('click', () => {
+			navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					//to stop scrolling
+					body.classList.toggle('fixed-position');
+				});
+			});
+
 			//to stop scrolling
 			body.classList.toggle('fixed-position');
 			// Toggle Nav
@@ -56,11 +61,6 @@ const NavBar = () => {
 				<Link to='/commodities'>
 					<li>Commodities</li>
 				</Link>
-				{/* <li>
-					<NavButton title='TAKE ACTION' link='#'>
-						Take Action
-					</NavButton>
-				</li> */}
 			</ul>
 			<div id='burger'>
 				<div className='line1'></div>
