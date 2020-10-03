@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Map from '../../components/googleMap/googleMap.component';
+import Map from './Map';
 import './contactPage.styles.scss';
 
 export default function ContactPage() {
@@ -86,8 +86,8 @@ export default function ContactPage() {
 						</button>
 					</form>
 				</div>
+				<Map />
 			</div>
-			<Map />
 		</div>
 	);
 }

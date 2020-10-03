@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import NavButton from '../customButton/navButton.component';
 import './navBar.styles.scss';
 
 const NavBar = () => {

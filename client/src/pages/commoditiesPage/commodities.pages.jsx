@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { dataAPIKey } from '../../keys';
 import ApiData from './ApiData';
 import './commodities.styles.scss';
 
 export default function Commodities() {
 	const [data, setData] = useState();
-	const key = '579b464db66ec23bdd00000150b9879b6b7e424152ff785940115f29';
 	const limit = 20;
 
 	useEffect(() => {
 		fetch(
-			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${key}&format=json&offset=0&limit=${limit}&filters=fruits%20and%20vegetables`
+			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${dataAPIKey}&format=json&offset=0&limit=${limit}&filters=fruits%20and%20vegetables`
 		)
 			.then(res => res.json())
 			.then(api => setData(api.records))
