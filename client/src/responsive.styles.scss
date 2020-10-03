@@ -30,6 +30,7 @@
 		top: 8vh;
 		min-height: 92vh;
 		margin: 0;
+		padding: 0;
 		clip-path: circle(1500px at 90% -10%);
 		-webkit-clip-path: circle(1500px at 90% -10%);
 		pointer-events: all;
@@ -195,6 +196,12 @@
 }
 
 @media screen and(max-width: 500px) {
+	#home {
+		h2,
+		h1 {
+			margin: 15px 0;
+		}
+	}
 	#map {
 		margin: 20px 0 0 10px;
 	}

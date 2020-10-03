@@ -14,6 +14,7 @@ export default function Commodities() {
 			.then(res => res.json())
 			.then(api => setData(api.records))
 			.catch(err => console.log(err));
+		// eslint-disable-next-line
 	}, [!data]);
 
 	return (

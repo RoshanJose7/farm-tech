@@ -13,32 +13,29 @@ const NavBar = () => {
 		const nav = document.querySelector('#nav-links');
 		const navLinks = document.querySelectorAll('#nav-links li');
 		const body = document.querySelector('body');
+		const width = window.screen.width;
 
-		//Close the navbar when a nav-link is clicked
-		navLinks.forEach(link => {
-			link.addEventListener('click', () => {
+		if (width < 900) {
+			navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					//to stop scrolling
+					body.classList.toggle('fixed-position');
+					// Toggle Nav
+					nav.classList.toggle('open');
+					// Burger Animation
+					burger.classList.toggle('toggle');
+				});
+			});
+
+			burger.addEventListener('click', () => {
+				//to stop scrolling
+				body.classList.toggle('fixed-position');
 				// Toggle Nav
 				nav.classList.toggle('open');
 				// Burger Animation
 				burger.classList.toggle('toggle');
 			});
-		});
-
-		burger.addEventListener('click', () => {
-			navLinks.forEach(link => {
-				link.addEventListener('click', () => {
-					//to stop scrolling
-					body.classList.toggle('fixed-position');
-				});
-			});
-
-			//to stop scrolling
-			body.classList.toggle('fixed-position');
-			// Toggle Nav
-			nav.classList.toggle('open');
-			// Burger Animation
-			burger.classList.toggle('toggle');
-		});
+		}
 	});
 
 	return (
