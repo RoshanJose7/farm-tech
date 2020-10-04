@@ -18,19 +18,24 @@ function HomePage() {
 					Farmer are the backbone of our country,our work is to give support to farmer in this technology era.
 				</p>
 				<div className='button-holder'>
-					<TransparentButton title='Services' link='#' isTransparent={true} />
+					<TransparentButton title='Services' link='/services' isTransparent={true} />
 					<SolidButton title='About Us' link='/about' isTransparent={false} />
 				</div>
 			</div>
 			<div id='announcements'>
 				<div id='announcement-cards'>
-					<CustomCard title="Fruits and Vegetable's updated prices of APMC" imgLink={veggies} />
-					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} />
+					<CustomCard
+						title="Fruits and Vegetable's updated prices of APMC"
+						imgLink={veggies}
+						link='/services'
+					/>
+					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
 					<CustomCard
 						title='
 Get money by giving your dryland for rent / Lease	
 '
 						imgLink={farming}
+						link='/services'
 					/>
 				</div>
 				<div id='announcement-content'>
@@ -46,7 +51,7 @@ Get money by giving your dryland for rent / Lease
 							solution here.
 						</p>
 						<div>
-							<TransparentButton title='Our History' link='#' />
+							<TransparentButton title='Our History' link='/about' />
 						</div>
 					</div>
 				</div>
@@ -59,7 +64,7 @@ Get money by giving your dryland for rent / Lease
 					<span>mail us on agritech@gmail.com</span>
 				</p>
 				<div className='button-holder'>
-					<TransparentButton title='Contact' link='#' isTransparent={true} />
+					<TransparentButton title='Contact' link='/contact' isTransparent={true} />
 				</div>
 			</div>
 		</div>
