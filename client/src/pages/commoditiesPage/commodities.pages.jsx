@@ -5,17 +5,24 @@ import './commodities.styles.scss';
 
 export default function Commodities() {
 	const [data, setData] = useState();
-	const limit = 20;
+	const [limit, setLimit] = useState(20);
 
 	useEffect(() => {
 		fetch(
-			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${dataAPIKey}&format=json&offset=0&limit=${limit}&filters=fruits%20and%20vegetables`
+			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${dataAPIKey}&format=json&offset=0&limit=${limit}&filters=fruits%20and%20vegetables`,
+			{
+				mode: 'cors'
+			}
 		)
 			.then(res => res.json())
 			.then(api => setData(api.records))
 			.catch(err => console.log(err));
 		// eslint-disable-next-line
-	}, [!data]);
+	});
+
+	function handleChange(event) {
+		setLimit(event.target.value);
+	}
 
 	return (
 		<div id='commodities'>
@@ -25,6 +32,10 @@ export default function Commodities() {
 			</div>
 			<div id='commodities-info'>
 				<h1>Table with the current prices for fruits and vegetables</h1>
+				<div id='filters'>
+					<p>Enter the no. of commodities to be shown: </p>
+					<input name='limit' onChange={e => handleChange(e)} type='text' placeholder='No of Commodities' />
+				</div>
 				<div id='table'>
 					<div id='table-head'>
 						<h2

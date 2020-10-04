@@ -20,7 +20,7 @@ export default function ApiData({ data }) {
 	} else {
 		return (
 			<div className='table-row'>
-				<h1>Loading Data......</h1>
+				<h1>Enter no. of commodities...</h1>
 			</div>
 		);
 	}
