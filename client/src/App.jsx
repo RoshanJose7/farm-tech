@@ -7,6 +7,7 @@ import ContactPage from './pages/contactPage/contactPage.pages';
 import ServicesPage from './pages/servicesPage/servicesPage.pages';
 import CommoditiesPage from './pages/commoditiesPage/commodities.pages';
 import Footer from './components/footer/footer.component';
+import './gTranslate';
 import './index.scss';
 import './responsive.styles.scss';
 
@@ -14,6 +15,7 @@ function App() {
 	return (
 		<Router>
 			<div>
+				<div id='google_translate_element'></div>
 				<NavBar />
 				<Switch>
 					<Route path='/' component={HomePage} exact />
