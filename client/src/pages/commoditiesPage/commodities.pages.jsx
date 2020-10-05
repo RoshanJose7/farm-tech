@@ -9,7 +9,7 @@ export default function Commodities() {
 
 	useEffect(() => {
 		fetch(
-			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${dataAPIKey}&format=json&offset=0&limit=${limit}&filters=fruits%20and%20vegetables`,
+			`https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=${dataAPIKey}&offset=10&format=json&offset=10&limit=${limit}&filters=fruits%2C%20vegetables`,
 			{
 				mode: 'cors'
 			}

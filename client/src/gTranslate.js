@@ -61,7 +61,7 @@
 		c._cam = '';
 		c._ctkk = '444686.3113889562';
 		var h = 'translate.googleapis.com';
-		var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
+		var s = (true ? 'https' : window.location.protocol === 'https:' ? 'https' : 'http') + '://';
 		var b = s + h;
 		c._pah = h;
 		c._pas = s;

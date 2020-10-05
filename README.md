@@ -1,3 +1,3 @@
-# Farm Tech Blog Site
+# Connect Tech Blog Site
 
 ### A Static Web Site for our StartUp

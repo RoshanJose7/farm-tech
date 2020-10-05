@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/Logo.png';
 import './navBar.styles.scss';
 
 const NavBar = () => {
@@ -42,7 +43,7 @@ const NavBar = () => {
 		<nav>
 			<div id='logo'>
 				<Link style={LinkStyles} to='/'>
-					<h1>LOGO</h1>
+					<img className='logoImg' src={logo} alt='Logo' />
 				</Link>
 			</div>
 			<ul id='nav-links'>
