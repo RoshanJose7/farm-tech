@@ -52,7 +52,7 @@ export default function ContactPage() {
 					</div>
 					<div id='email'>
 						<h3>Email</h3>
-						<p>agritech@gmail.com</p>
+						<p>krishitech@gmail.com</p>
 						<p>support@example.com</p>
 					</div>
 					<div id='work-time'>

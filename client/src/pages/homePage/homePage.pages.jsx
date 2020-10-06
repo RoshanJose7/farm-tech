@@ -13,7 +13,7 @@ function HomePage() {
 			<div id='home'>
 				<div id='home-content' />
 				<h2>"JAI JAWAN JAI KISSAN"</h2>
-				<h1>WELCOME to Agri-Tech</h1>
+				<h1>WELCOME to Krishi-Tech</h1>
 				<p>
 					Farmer are the backbone of our country,our work is to give support to farmer in this technology era.
 				</p>
@@ -61,7 +61,7 @@ Get money by giving your dryland for rent / Lease
 				<h1>CONTACT US</h1>
 				<p>
 					<span>Contact us on +91-7338095085</span>
-					<span>mail us on agritech@gmail.com</span>
+					<span>mail us on krishitech@gmail.com</span>
 				</p>
 				<div className='button-holder'>
 					<TransparentButton title='Contact' link='/contact' isTransparent={true} />
