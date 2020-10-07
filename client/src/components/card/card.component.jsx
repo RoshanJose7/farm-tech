@@ -1,19 +1,19 @@
-import React from "react";
-import SolidButton from "../customButton/solidButton.component";
-import "./card.styles.scss";
+import React from 'react';
+import SolidButton from '../customButton/solidButton.component';
+import './card.styles.scss';
 
-function CustomCard({ title, imgLink, link }) {
-  return (
-    <div id="card">
-      <div
-        style={{ backgroundImage: `url(${imgLink})` }}
-        className="card-img"
-      />
-      <div id="title">
-        <h3>{title}</h3>
-      </div>
-      <SolidButton title="Read More..." link={link} />
-    </div>
-  );
+export default function CustomCard({ title, imgLink, link }) {
+	return (
+		<div id='card'>
+			<div class='card-inner'>
+				<div class='card-front'>
+					<img src={imgLink} alt='Female' />
+				</div>
+				<div class='card-back'>
+					<h3>{title}</h3>
+					<SolidButton title='Read More...' link={link} />
+				</div>
+			</div>
+		</div>
+	);
 }
-export default CustomCard;
