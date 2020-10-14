@@ -36,7 +36,8 @@
 	}
 
 	h2 {
-		font-size: 40px;
+		font-size: 30px;
+		font-weight: 800;
 	}
 
 	h3 {
@@ -60,8 +61,21 @@
 			width: 100%;
 			margin: 25px;
 
-			input {
-				margin-left: 20px;
+			.filter {
+				display: inline-block;
+				margin: 20px;
+				font-size: 26px;
+
+				input {
+					font-size: 20px;
+					border: 2px solid #eaeaea;
+					margin: 0 20px;
+					padding: 5px;
+					transition: all 0.2s ease;
+				}
+				input:focus {
+					border: 2px solid #1a6c7a;
+				}
 			}
 		}
 
@@ -70,15 +84,14 @@
 			flex-direction: column;
 			text-align: center;
 			width: 90%;
-			border: 1px solid grey;
 
 			#table-head {
 				display: flex;
 				justify-content: space-evenly;
 				margin: 10px;
+				background-color: #b8e3eb;
 
 				h2 {
-					font-size: 25px;
 					width: 20%;
 					margin: 10px;
 				}
@@ -92,11 +105,11 @@
 					justify-content: space-evenly;
 					width: 100%;
 					margin: 10px 0;
-					border-top: 1px solid grey;
+					background-color: rgb(228, 228, 228);
 
 					.table-data {
 						width: 20%;
-						margin: 10px;
+						margin: 15px 10px;
 					}
 				}
 			}

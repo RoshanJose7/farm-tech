@@ -5,11 +5,11 @@ import './card.styles.scss';
 export default function CustomCard({ title, imgLink, link }) {
 	return (
 		<div id='card'>
-			<div class='card-inner'>
-				<div class='card-front'>
+			<div className='card-inner'>
+				<div className='card-front'>
 					<img src={imgLink} alt='Female' />
 				</div>
-				<div class='card-back'>
+				<div className='card-back'>
 					<h3>{title}</h3>
 					<SolidButton title='Read More...' link={link} />
 				</div>
