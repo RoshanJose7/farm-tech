@@ -12,9 +12,25 @@ function HomePage() {
 		<div>
 			<div id='home'>
 				<div id='home-content' />
-				<h2>"JAI JAWAN JAI KISSAN"</h2>
-				<h1>WELCOME to Krishi-Tech</h1>
-				<p>
+				<h2
+					style={{
+						color: 'white'
+					}}
+				>
+					"JAI JAWAN JAI KISSAN"
+				</h2>
+				<h1
+					style={{
+						color: 'white'
+					}}
+				>
+					WELCOME to Krishi-Tech
+				</h1>
+				<p
+					style={{
+						color: 'white'
+					}}
+				>
 					Farmer are the backbone of our country,our work is to give support to farmer in this technology era.
 				</p>
 				<div className='button-holder'>
@@ -27,7 +43,7 @@ function HomePage() {
 					<CustomCard
 						title="Fruits and Vegetable's updated prices of APMC"
 						imgLink={veggies}
-						link='/services'
+						link='/commodities'
 					/>
 					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
 					<CustomCard
