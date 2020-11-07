@@ -27,11 +27,8 @@ export default function ServicesPage() {
 				<div className='service'>
 					<div className='img' style={{ backgroundImage: `url(${farmer})` }} />
 					<div className='text'>
-						<h3>Want to sell yours vegetables?</h3>
-						<p>
-							Farmers can sell there fresh vegetables and fruits with our company according to the updated
-							price of APMC .
-						</p>
+						<h3>Want to sell yours Land?</h3>
+						<p>Sell or Lease your Land to Us. We will take care of the rest.</p>
 						<TransparentButton title='Contact' link='/contact' />
 					</div>
 				</div>

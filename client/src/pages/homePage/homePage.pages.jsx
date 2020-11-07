@@ -5,6 +5,7 @@ import CustomCard from '../../components/card/card.component';
 import veggies from '../../assets/veggies.jpg';
 import shoppingCart from '../../assets/shopping-cart.png';
 import farming from '../../assets/farming.jpg';
+import fertilizer from '../../assets/veggie-fertilizer.jpg';
 import './homePage.styles.scss';
 
 function HomePage() {
@@ -51,7 +52,12 @@ function HomePage() {
 Get money by giving your dryland for rent / Lease	
 '
 						imgLink={farming}
-						link='/services'
+						link='/land'
+					/>
+					<CustomCard
+						title='Learn about the Damage cause by chemical fertilizers'
+						imgLink={fertilizer}
+						link='/fertilizer'
 					/>
 				</div>
 				<div id='announcement-content'>
