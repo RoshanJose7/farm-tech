@@ -15,21 +15,21 @@ function HomePage() {
 				<div id='home-content' />
 				<h2
 					style={{
-						color: 'white'
+						color: 'black'
 					}}
 				>
 					"JAI JAWAN JAI KISSAN"
 				</h2>
 				<h1
 					style={{
-						color: 'white'
+						color: 'black'
 					}}
 				>
 					WELCOME to Krishi-Tech
 				</h1>
 				<p
 					style={{
-						color: 'white'
+						color: 'green'
 					}}
 				>
 					Farmer are the backbone of our country,our work is to give support to farmer in this technology era.
@@ -47,13 +47,7 @@ function HomePage() {
 						link='/commodities'
 					/>
 					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
-					<CustomCard
-						title='
-Get money by giving your dryland for rent / Lease	
-'
-						imgLink={farming}
-						link='/land'
-					/>
+					<CustomCard title='Get money by giving your dryland for rent' imgLink={farming} link='/land' />
 					<CustomCard
 						title='Learn about the Damage cause by chemical fertilizers'
 						imgLink={fertilizer}
