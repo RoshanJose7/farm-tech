@@ -79,13 +79,13 @@
 			}
 		}
 
-		#table {
+		.table {
 			display: flex;
 			flex-direction: column;
 			text-align: center;
 			width: 90%;
 
-			#table-head {
+			.table-head {
 				display: flex;
 				justify-content: space-evenly;
 				margin: 10px;
@@ -97,7 +97,7 @@
 				}
 			}
 
-			#table-body {
+			.table-body {
 				width: 100%;
 
 				.table-row {

@@ -45,8 +45,8 @@ export default function Commodities() {
 						/>
 					</div>
 				</div>
-				<div id='table'>
-					<div id='table-head'>
+				<div className='table'>
+					<div className='table-head'>
 						<h2
 							style={{
 								width: '30%'
@@ -59,7 +59,7 @@ export default function Commodities() {
 						<h2>Max Price (kg/quintal)</h2>
 						<h2>Modal Price (kg/quintal)</h2>
 					</div>
-					<div id='table-body'>
+					<div className='table-body'>
 						<ApiData data={data} limit={filters.limit} filterName={filters.name} />
 					</div>
 				</div>
