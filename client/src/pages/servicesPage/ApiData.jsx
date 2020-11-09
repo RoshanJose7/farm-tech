@@ -28,9 +28,9 @@ function ApiData({ data, filterName, limit }) {
 							||
 							{item.state}
 						</span>
-						<span className='table-data'>{item.min_price / 100}₹</span>
-						<span className='table-data'>{item.max_price / 100}₹</span>
-						<span className='table-data'>{item.modal_price / 100}₹</span>
+						<span className='table-data'>{item.min_price}₹</span>
+						<span className='table-data'>{item.max_price}₹</span>
+						<span className='table-data'>{item.modal_price}₹</span>
 					</div>
 				));
 			} else {
@@ -58,9 +58,9 @@ function ApiData({ data, filterName, limit }) {
 								||
 								{item.state}
 							</span>
-							<span className='table-data'>{item.min_price / 100}₹</span>
-							<span className='table-data'>{item.max_price / 100}₹</span>
-							<span className='table-data'>{item.modal_price / 100}₹</span>
+							<span className='table-data'>{item.min_price}₹</span>
+							<span className='table-data'>{item.max_price}₹</span>
+							<span className='table-data'>{item.modal_price}₹</span>
 						</div>
 					) : null;
 				});

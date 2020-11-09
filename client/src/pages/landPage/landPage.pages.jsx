@@ -12,7 +12,10 @@ export default function LandPage() {
 				<div className='land'>
 					<div className='text'>
 						<h3>Earn Revenue by giving your land for Eco-Friendly measures</h3>
-						<p>Farmers can sell their land to us. And we will take care of the rest.</p>
+						<p>
+							Farmers can earn Revenue by giving your land to us for Eco-Friendly purposes. And we will
+							take care of the rest.
+						</p>
 						<p>For furthur enquires you can contact us.</p>
 						<SolidButton title='Contact' link='/contact' />
 					</div>

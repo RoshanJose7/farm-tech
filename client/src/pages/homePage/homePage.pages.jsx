@@ -15,6 +15,7 @@ function HomePage() {
 				<div id='home-content' />
 				<h2
 					style={{
+						margin: '20px 0',
 						color: 'black'
 					}}
 				>

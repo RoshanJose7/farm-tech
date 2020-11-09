@@ -69,9 +69,9 @@ export default function Commodities() {
 								Commodity Name
 							</h2>
 							<h2>District || State</h2>
-							<h2>Min Price (kg)</h2>
-							<h2>Max Price (kg)</h2>
-							<h2>Modal Price (kg)</h2>
+							<h2>Min Price (in Quintal)</h2>
+							<h2>Max Price (in Quintal)</h2>
+							<h2>Modal Price (in Quintal)</h2>
 						</div>
 						<div className='table-body'>
 							<ApiData data={data} limit={filters.limit} filterName={filters.name} />
