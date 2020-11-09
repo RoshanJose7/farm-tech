@@ -17,7 +17,7 @@ function ApiData({ data, filterName, limit }) {
 					<div className='table-row' key={index}>
 						<span
 							style={{
-								width: '40%'
+								width: '30%'
 							}}
 							className='table-data'
 						>
