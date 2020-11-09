@@ -32,10 +32,10 @@ function ApiData({ data, filterName, limit }) {
 							{item.min_price / 100}₹ / {item.min_price}₹
 						</span>
 						<span className='table-data'>
-							{item.max_price / 100}₹ / {item.min_price}₹
+							{item.max_price / 100}₹ / {item.max_price}₹
 						</span>
 						<span className='table-data'>
-							{item.modal_price / 100}₹ / {item.min_price}₹
+							{item.modal_price / 100}₹ / {item.modal_price}₹
 						</span>
 					</div>
 				));
@@ -68,10 +68,10 @@ function ApiData({ data, filterName, limit }) {
 								{item.min_price / 100}₹ / {item.min_price}₹
 							</span>
 							<span className='table-data'>
-								{item.max_price / 100}₹ / {item.min_price}₹
+								{item.max_price / 100}₹ / {item.max_price}₹
 							</span>
 							<span className='table-data'>
-								{item.modal_price / 100}₹ / {item.min_price}₹
+								{item.modal_price / 100}₹ / {item.modal_price}₹
 							</span>
 						</div>
 					) : null;
