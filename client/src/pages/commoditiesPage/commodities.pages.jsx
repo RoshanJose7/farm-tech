@@ -49,15 +49,15 @@ export default function Commodities() {
 					<div id='table-head'>
 						<h2
 							style={{
-								width: '40%'
+								width: '30%'
 							}}
 						>
 							Commodity Name
 						</h2>
 						<h2>District || State</h2>
-						<h2>Min Price</h2>
-						<h2>Max Price</h2>
-						<h2>Modal Price</h2>
+						<h2>Min Price (kg/quintal)</h2>
+						<h2>Max Price (kg/quintal)</h2>
+						<h2>Modal Price (kg/quintal)</h2>
 					</div>
 					<div id='table-body'>
 						<ApiData data={data} limit={filters.limit} filterName={filters.name} />
