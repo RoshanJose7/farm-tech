@@ -12,6 +12,7 @@ import Footer from './components/footer/footer.component';
 import './gTranslate';
 import './index.scss';
 import './responsive.styles.scss';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	return (

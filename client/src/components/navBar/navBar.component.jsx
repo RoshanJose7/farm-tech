@@ -40,9 +40,9 @@ const NavBar = () => {
 	});
 
 	return (
-		<nav>
+		<nav style={{ display: 'flex' }}>
 			<div id='logo'>
-				<Link style={LinkStyles} to='/'>
+				<Link to='/'>
 					<img className='logoImg' src={logo} alt='Logo' />
 				</Link>
 			</div>
@@ -50,13 +50,13 @@ const NavBar = () => {
 				<Link style={LinkStyles} to='/about'>
 					<li>About</li>
 				</Link>
-				<Link to='/services'>
+				<Link style={LinkStyles} to='/services'>
 					<li>Services</li>
 				</Link>
-				<Link to='/contact'>
+				<Link style={LinkStyles} to='/contact'>
 					<li>Contact</li>
 				</Link>
-				<Link to='/commodities'>
+				<Link style={LinkStyles} to='/commodities'>
 					<li>Commodities</li>
 				</Link>
 			</ul>

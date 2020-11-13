@@ -1,44 +1,82 @@
 import React from 'react';
-import SolidButton from '../../components/customButton/solidButton.component';
 import TransparentButton from '../../components/customButton/transparentButton.component';
 import CustomCard from '../../components/card/card.component';
+import { Carousel } from 'react-bootstrap';
+import './homePage.styles.scss';
 import veggies from '../../assets/veggies.jpg';
 import shoppingCart from '../../assets/shopping-cart.png';
 import farming from '../../assets/farming.jpg';
 import fertilizer from '../../assets/veggie-fertilizer.jpg';
-import './homePage.styles.scss';
+import slide1Pic from '../../assets/farm-field.jpg';
+import slide2Pic from '../../assets/slide-2.jpg';
+import slide3Pic from '../../assets/slide-3.jpeg';
 
 function HomePage() {
 	return (
 		<div>
 			<div id='home'>
-				<div id='home-content' />
-				<h2
-					style={{
-						margin: '20px 0',
-						color: 'black'
-					}}
-				>
-					"JAI JAWAN JAI KISSAN"
-				</h2>
-				<h1
-					style={{
-						color: 'black'
-					}}
-				>
-					WELCOME to Krishi-Tech
-				</h1>
-				<p
-					style={{
-						color: 'green'
-					}}
-				>
-					Farmer are the backbone of our country,our work is to give support to farmer in this technology era.
-				</p>
-				<div className='button-holder'>
-					<TransparentButton title='Services' link='/services' isTransparent={true} />
-					<SolidButton title='About Us' link='/about' isTransparent={false} />
-				</div>
+				<Carousel className='bg-dark'>
+					<Carousel.Item>
+						<img
+							className='img d-block w-100'
+							style={{
+								backgroundColor: '#1a6c7a',
+								opacity: '0.7'
+							}}
+							src={slide1Pic}
+							alt='First slide'
+						/>
+						<Carousel.Caption>
+							<h3>"JAI JAWAN JAI KISSAN"</h3>
+							<h5>WELCOME to Krishi-Tech</h5>
+							<p>
+								Farmer are the backbone of our country,our work is to give support to farmer in this
+								technology era.
+							</p>
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img
+							className='img d-block w-100'
+							style={{
+								backgroundColor: '#1a6c7a',
+								opacity: '0.7'
+							}}
+							src={slide2Pic}
+							alt='Second slide'
+						/>
+
+						<Carousel.Caption
+							className='slide-2-caption'
+							style={{
+								left: '120px',
+								bottom: '40px',
+								width: '450px'
+							}}
+						>
+							<p style={{ fontSize: '30px', margin: '0' }}>Small Farmers - Small Retailers</p>
+							<p style={{ fontSize: '40px', display: 'block', margin: '0' }}>BIG BUISNESS</p>
+							<p style={{ fontSize: '25px', margin: '0' }}>To Find more Retailers:</p>
+							<TransparentButton title='Click Here' link='/contact' isTransparent={true} />
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className='img d-block w-100' src={slide3Pic} alt='Third slide' />
+						<Carousel.Caption
+							style={{
+								left: '120px',
+								top: '50px',
+								width: '450px',
+								color: 'black'
+							}}
+						>
+							<p style={{ fontSize: '40px', display: 'block', margin: '0' }}>One Stop Farm</p>
+							<p style={{ fontSize: '28px', display: 'block', margin: '0' }}>
+								We Farm, We Deliver, You Relax.
+							</p>
+						</Carousel.Caption>
+					</Carousel.Item>
+				</Carousel>
 			</div>
 			<div id='announcements'>
 				<div id='announcement-cards'>
