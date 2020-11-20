@@ -7,3 +7,5 @@ client/yarn.lock
 server/yarn.lock
 client/package-lock.json
 server/package-lock.json
+client/src/keys.js
+server/config/keys.js

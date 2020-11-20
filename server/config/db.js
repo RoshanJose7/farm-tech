@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const data = require('./keys');
 
 mongoose
 	.connect(
-		'mongodb+srv://dbUser:dbUserPassword@formdata.wdrz0.azure.mongodb.net/formdata?retryWrites=true&w=majority',
+		`mongodb+srv://${data.user}:${data.passwd}@formdata.wdrz0.azure.mongodb.net/formdata?retryWrites=true&w=majority`,
 		{
 			useNewUrlParser: true,
 			useCreateIndex: true,
