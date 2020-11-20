@@ -1,3 +1,7 @@
-# Krishi Tech Blog Site
+# Connect Tech Blog Site
 
-### A Static Web Site for our StartUp
+### A Full Stack Web App for our StartUp
+
+## Front End is built Using ReactJS, and a CSS Pre-Processor called SASS
+
+## The Back End is Built on NodeJS with Express, and MongoDB as the DataBase
