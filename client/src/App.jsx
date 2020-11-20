@@ -8,6 +8,7 @@ import ServicesPage from './pages/servicesPage/servicesPage.pages';
 import CommoditiesPage from './pages/commoditiesPage/commodities.pages';
 import LandPage from './pages/landPage/landPage.pages';
 import FertilizerPage from './pages/FertilizerPage/FertilizerPage.pages';
+import ConsumerPage from './pages/consumerPage/Consumer.Pages';
 import Footer from './components/footer/footer.component';
 import './gTranslate';
 import './index.scss';
@@ -28,6 +29,7 @@ function App() {
 					<Route path='/commodities' component={CommoditiesPage} />
 					<Route path='/land' component={LandPage} />
 					<Route path='/fertilizer' component={FertilizerPage} />
+					<Route path='/consumer' component={ConsumerPage} />
 					<Route path='/*' component={CommoditiesPage} />
 				</Switch>
 				<Footer />

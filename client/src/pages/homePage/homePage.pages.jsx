@@ -74,6 +74,13 @@ function HomePage() {
 							<p style={{ fontSize: '28px', display: 'block', margin: '0' }}>
 								We Farm, We Deliver, You Relax.
 							</p>
+							<div
+								style={{ position: 'absolute', left: '120px', top: '420px' }}
+								className='button'
+								id='solid-button'
+							>
+								<a href='/consumer'>Order Now</a>
+							</div>
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
