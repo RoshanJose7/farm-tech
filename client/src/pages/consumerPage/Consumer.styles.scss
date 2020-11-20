@@ -13,10 +13,8 @@
 	}
 
 	#consumer-head {
-		color: white;
-		text-align: center;
 		position: relative;
-		background-image: url('../../assets/solar.jpg');
+		background-image: url('../../assets/consumer.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -30,7 +28,6 @@
 
 	#consumer-back {
 		position: absolute;
-		background-image: radial-gradient(at center center, #153243 0%, #1a6c7a 100%);
 		opacity: 0.5;
 		background-color: transparent;
 		width: 100%;
@@ -60,6 +57,7 @@
 
 			input:focus {
 				border: 1px solid #1a6c7a;
+				border-radius: 10px;
 			}
 
 			.button {

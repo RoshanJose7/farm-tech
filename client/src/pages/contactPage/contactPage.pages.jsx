@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import Map from './Map';
 import './contactPage.styles.scss';
 
 export default function ContactPage() {
-	const [data, setData] = useState({
-		name: '',
-		phno: '',
-		email: '',
-		message: ''
-	});
+	const nameRef = useRef('');
+	const phnoRef = useRef('');
+	const emailRef = useRef('');
+	const messageRef = useRef('');
 
 	function handleSubmit(e) {
+		const data = {
+			name: nameRef.current.value,
+			phno: phnoRef.current.value,
+			email: emailRef.current.value,
+			message: messageRef.current.value
+		};
 		e.preventDefault();
 		fetch('/api/formdata', {
 			method: 'POST',
@@ -24,16 +28,6 @@ export default function ContactPage() {
 				console.log(res);
 			})
 			.catch(err => console.log(err));
-	}
-
-	function handleChange(e) {
-		setData({ ...data, [e.target.name]: e.target.value });
-
-		if (e.target.name === 'phno') {
-			if (isNaN(parseInt(e.target.value)) && e.target.value !== '') {
-				alert('Enter a number');
-			}
-		}
 	}
 
 	return (
@@ -65,22 +59,10 @@ export default function ContactPage() {
 				<div id='contact-form'>
 					<h2>Send us a message</h2>
 					<form onSubmit={handleSubmit}>
-						<input required placeholder='Name' name='name' type='text' onChange={e => handleChange(e)} />
-						<input
-							required
-							placeholder='Phone Number'
-							name='phno'
-							type='text'
-							onChange={e => handleChange(e)}
-						/>
-						<input required placeholder='Email' name='email' type='text' onChange={e => handleChange(e)} />
-						<input
-							required
-							placeholder='Message'
-							name='message'
-							type='textarea'
-							onChange={e => handleChange(e)}
-						/>
+						<input required placeholder='Name' name='name' type='text' ref={nameRef} />
+						<input required placeholder='Phone Number' name='phno' type='text' ref={phnoRef} />
+						<input required placeholder='Email' name='email' type='text' ref={emailRef} />
+						<input required placeholder='Message' name='message' type='textarea' ref={messageRef} />
 						<button type='submit' id='contact-btn'>
 							Submit
 						</button>
