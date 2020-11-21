@@ -32,7 +32,7 @@ export default function AboutPage() {
 						announced by our Honorable Prime minister shri Narendra Modi which mainly focus on farmers
 						agreement on price, trade,E-Commerce.
 					</p>
-					<h4>- AGRI-TECH Team</h4>
+					<h4>- KRISHI-TECH Team</h4>
 				</div>
 			</div>
 			<div id='about-missions'>
