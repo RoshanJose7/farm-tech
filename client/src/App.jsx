@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/navBar/navBar.component';
 import AboutPage from './pages/aboutPage/aboutPage.pages';
 import HomePage from './pages/homePage/homePage.pages';
+import HotelPage from './pages/hotelPage/hotelPage.pages';
 import ContactPage from './pages/contactPage/contactPage.pages';
 import ServicesPage from './pages/servicesPage/servicesPage.pages';
 import CommoditiesPage from './pages/commoditiesPage/commodities.pages';
@@ -28,6 +29,7 @@ function App() {
 					<Route path='/services' component={ServicesPage} />
 					<Route path='/commodities' component={CommoditiesPage} />
 					<Route path='/land' component={LandPage} />
+					<Route path='/hotel' component={HotelPage} />
 					<Route path='/fertilizer' component={FertilizerPage} />
 					<Route path='/consumer' component={ConsumerPage} />
 					<Route path='/*' component={CommoditiesPage} />

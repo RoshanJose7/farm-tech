@@ -36,6 +36,7 @@ export default function ContactPage() {
 				<div id='contact-back' />
 				<h1>Contact</h1>
 			</div>
+
 			<div id='contact-info'>
 				<div id='get-in-touch'>
 					<h2>Get In Touch</h2>

@@ -7,6 +7,7 @@ import veggies from '../../assets/veggies.jpg';
 import shoppingCart from '../../assets/shopping-cart.png';
 import farming from '../../assets/farming.jpg';
 import fertilizer from '../../assets/veggie-fertilizer.jpg';
+import hotelPic from '../../assets/hotel.jpeg';
 import slide1Pic from '../../assets/farm-field.jpg';
 import slide2Pic from '../../assets/slide-2.jpg';
 import slide3Pic from '../../assets/slide-3.jpeg';
@@ -87,18 +88,27 @@ function HomePage() {
 			</div>
 			<div id='announcements'>
 				<div id='announcement-cards'>
-					<CustomCard
-						title="Fruits and Vegetable's updated prices of APMC"
-						imgLink={veggies}
-						link='/commodities'
-					/>
-					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
-					<CustomCard title='Get money by giving your dryland for rent' imgLink={farming} link='/land' />
-					<CustomCard
-						title='Learn about the Damage cause by chemical fertilizers'
-						imgLink={fertilizer}
-						link='/fertilizer'
-					/>
+					<div>
+						<CustomCard
+							title="Fruits and Vegetable's updated prices of APMC"
+							imgLink={veggies}
+							link='/commodities'
+						/>
+						<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
+						<CustomCard title='Get money by giving your dryland for rent' imgLink={farming} link='/land' />
+					</div>
+					<div>
+						<CustomCard
+							title='Learn about the Damage cause by chemical fertilizers'
+							imgLink={fertilizer}
+							link='/fertilizer'
+						/>
+						<CustomCard
+							title='Learn how you can get Fresh Vegetables for your Restraunts'
+							imgLink={hotelPic}
+							link='/hotel'
+						/>
+					</div>
 				</div>
 				<div id='announcement-content'>
 					<h3>Amazing Things for You</h3>
