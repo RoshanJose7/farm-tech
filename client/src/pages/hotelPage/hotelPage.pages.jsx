@@ -3,8 +3,7 @@ import { Formik, Field, Form, FieldArray } from 'formik';
 import { Button } from 'react-bootstrap';
 import SolidButton from '../../components/customButton/solidButton.component';
 import * as yup from 'yup';
-import './hotelPage.styles.scss';
-import { number } from 'yup/lib/locale';
+import './hotelPage.styles.css';
 
 const CustomCheckBox = props => {
 	return (

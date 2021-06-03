@@ -1,5 +1,5 @@
 import React from 'react';
-import './Consumer.styles.scss';
+import './Consumer.styles.css';
 
 function ConsumerPage() {
 	const nameRef = React.useRef('');

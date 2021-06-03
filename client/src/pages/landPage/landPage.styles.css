@@ -1,0 +1,70 @@
+#land-main {
+	 width: 100%;
+}
+ #land-main h1 {
+	 margin: 0;
+}
+ #land-main h2 {
+	 margin: 0;
+	 font-size: 40px;
+}
+ #land-main h3 {
+	 margin: 0;
+	 font-size: 30px;
+}
+ #land-main #land-head {
+	 color: white;
+	 text-align: center;
+	 position: relative;
+	 background-image: url('../../assets/solar.jpg');
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 width: 100%;
+	 height: 90vh;
+	 z-index: -1;
+}
+ #land-main #land-head h1 {
+	 font-size: 60px;
+}
+ #land-main #land-back {
+	 position: absolute;
+	 background-image: radial-gradient(at center center, #153243 0%, #1a6c7a 100%);
+	 opacity: 0.5;
+	 background-color: transparent;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -1;
+}
+ #land-main #land-info .land {
+	 display: flex;
+	 justify-content: space-evenly;
+	 align-items: center;
+}
+ #land-main #land-info .land .text {
+	 margin: 50px 70px;
+}
+ #land-main #land-info .land .text h1 {
+	 font-size: 60px;
+}
+ #land-main #land-info .land .text h3, #land-main #land-info .land .text p {
+	 display: block;
+	 margin: 10px 0;
+}
+ #land-main #land-info .land .text .button {
+	 margin: 70px 0 0;
+}
+ #land-main #land-info .land .text .button a {
+	 color: #1a6c7a;
+}
+ #land-main #land-info .land .text .button:hover a {
+	 color: white;
+}
+ #land-main #land-info .land .img {
+	 margin: 50px 70px;
+	 background-size: cover;
+	 background-position: center;
+	 height: 400px;
+	 width: 100%;
+}
+ 

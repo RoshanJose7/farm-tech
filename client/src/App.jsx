@@ -10,10 +10,11 @@ import CommoditiesPage from './pages/commoditiesPage/commodities.pages';
 import LandPage from './pages/landPage/landPage.pages';
 import FertilizerPage from './pages/FertilizerPage/FertilizerPage.pages';
 import ConsumerPage from './pages/consumerPage/Consumer.Pages';
+import MachinesPage from './pages/machinesPage/machinesPage.pages';
 import Footer from './components/footer/footer.component';
 import './gTranslate';
-import './index.scss';
-import './responsive.styles.scss';
+import './index.css';
+import './responsive.styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 					<Route path='/hotel' component={HotelPage} />
 					<Route path='/fertilizer' component={FertilizerPage} />
 					<Route path='/consumer' component={ConsumerPage} />
+					<Route path='/machines' component={MachinesPage} />
 					<Route path='/*' component={CommoditiesPage} />
 				</Switch>
 				<Footer />

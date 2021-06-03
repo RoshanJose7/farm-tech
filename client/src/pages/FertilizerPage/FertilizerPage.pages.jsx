@@ -1,6 +1,6 @@
 import React from 'react';
 import SolidButton from '../../components/customButton/solidButton.component';
-import './FertilizerPage.styles.scss';
+import './FertilizerPage.styles.css';
 
 export default function FertilizerPage() {
 	return (

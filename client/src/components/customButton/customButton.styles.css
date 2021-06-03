@@ -1,0 +1,58 @@
+.button {
+	 width: 200px;
+	 padding: 15px;
+	 text-align: center;
+	 transition: all 0.3s ease;
+	 box-shadow: none;
+	 border-radius: 10px;
+}
+ p {
+	 margin: 0 20px;
+	 text-decoration: none;
+	 font-size: 18px;
+	 display: inline-block;
+}
+ #transparent-button {
+	 background: transparent;
+	 border: 2px solid white;
+}
+ #transparent-button p {
+	 margin: 0 20px;
+	 color: #1a6c7a;
+}
+ #solid-button {
+	 background: white;
+	 color: #1a6c7a;
+	 margin: 10px;
+	 border: 2px solid grey;
+}
+ #solid-button p, #solid-button a {
+	 margin: 0 20px;
+	 color: #1a6c7a;
+}
+ #transparent-button:hover {
+	 background: #1a6c7a;
+	 border: 2px solid #1a6c7a;
+}
+ #transparent-button:hover p {
+	 color: white;
+}
+ #solid-button:hover {
+	 background: #1a6c7a;
+}
+ #solid-button:hover p, #solid-button:hover a {
+	 color: white;
+	 text-decoration: none;
+}
+ #nav-button {
+	 background: #1a6c7a;
+	 margin: 0 20px;
+	 width: 120px;
+}
+ #nav-button p {
+	 color: white;
+}
+ #nav-button:hover {
+	 background: #269fb4;
+}
+ 

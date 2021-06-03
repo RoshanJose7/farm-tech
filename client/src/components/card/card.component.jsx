@@ -1,6 +1,6 @@
 import React from 'react';
 import SolidButton from '../customButton/solidButton.component';
-import './card.styles.scss';
+import './card.styles.css';
 
 export default function CustomCard({ title, imgLink, link }) {
 	return (

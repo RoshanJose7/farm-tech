@@ -3,7 +3,7 @@ import { dataAPIKey } from '../../keys';
 import ApiData from './ApiData';
 import fruits from '../../assets/fruit-market.jpg';
 import SolidButton from '../../components/customButton/solidButton.component';
-import './servicesPage.styles.scss';
+import './servicesPage.styles.css';
 
 export default function Commodities() {
 	const [data, setData] = useState(undefined);

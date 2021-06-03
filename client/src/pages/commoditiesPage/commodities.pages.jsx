@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { dataAPIKey } from '../../keys';
 import ApiData from './ApiData';
-import './commodities.styles.scss';
+import './commodities.styles.css';
 
 export default function Commodities() {
 	const [data, setData] = useState(undefined);

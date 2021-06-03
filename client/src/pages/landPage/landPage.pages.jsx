@@ -1,6 +1,6 @@
 import React from 'react';
 import SolidButton from '../../components/customButton/solidButton.component';
-import './landPage.styles.scss';
+import './landPage.styles.css';
 
 export default function LandPage() {
 	return (

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Map from './Map';
-import './contactPage.styles.scss';
+import './contactPage.styles.css';
 
 export default function ContactPage() {
 	const nameRef = useRef('');

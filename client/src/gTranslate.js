@@ -40,7 +40,7 @@
 		return a;
 	}
 	window.addEventListener &&
-		'undefined' == typeof document.readyState &&
+		'undefined' === typeof document.readyState &&
 		window.addEventListener(
 			'DOMContentLoaded',
 			function () {

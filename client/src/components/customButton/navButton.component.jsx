@@ -1,5 +1,5 @@
 import React from "react";
-import "./customButton.styles.scss";
+import "./customButton.styles.css";
 
 const NavButton = ({ title, link }) => {
   return (
