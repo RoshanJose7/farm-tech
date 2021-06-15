@@ -89,29 +89,25 @@ function HomePage() {
 			</div>
 			<div id='announcements'>
 				<div id='announcement-cards'>
-						<CustomCard
-							title="Fruits and Vegetable's updated prices of APMC"
-							imgLink={veggies}
-							link='/commodities'
-						/>
-						<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
-						<CustomCard title='Get money by giving your dryland for rent' imgLink={farming} link='/land' />
-					
-						<CustomCard
-							title='Learn about the Damage cause by chemical fertilizers'
-							imgLink={fertilizer}
-							link='/fertilizer'
-						/>
-						<CustomCard
-							title='Learn how you can get Fresh Vegetables for your Restraunts'
-							imgLink={hotelPic}
-							link='/hotel'
-						/>
-						<CustomCard
-							title='Learn how you Smart and Cost-Effective Machines can help you'
-							imgLink={machinesPic}
-							link='/machines'
-						/>
+					<CustomCard
+						title="Fruits and Vegetable's updated prices of APMC"
+						imgLink={veggies}
+						link='/commodities'
+					/>
+					<CustomCard title='Sell yours fresh vegetables to us' imgLink={shoppingCart} link='/services' />
+					<CustomCard title='Get money by giving your dryland for rent' imgLink={farming} link='/land' />
+
+					<CustomCard
+						title='Learn about the Damage cause by chemical fertilizers'
+						imgLink={fertilizer}
+						link='/fertilizer'
+					/>
+					<CustomCard
+						title='Learn how you can get Fresh Vegetables for your Restraunts'
+						imgLink={hotelPic}
+						link='/hotel'
+					/>
+					<CustomCard title='Smart and Cost-Effective Machines' imgLink={machinesPic} link='/machines' />
 				</div>
 				<div id='announcement-content'>
 					<h3>Amazing Things for You</h3>
