@@ -1,1 +1,1 @@
-sudo cp -r /home/Jose/farm-tech-blog/build/* /usr/share/nginx/html/
+cp -r /home/Jose/farm-tech-blog/build/* /usr/share/nginx/html/
