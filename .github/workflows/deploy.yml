@@ -3,42 +3,6 @@ name: Deploy
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 16.6.2
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.6.2
-          cache: "yarn"
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build
-
-      - name: Copy repository contents via scp
-        uses: appleboy/scp-action@master
-        env:
-          HOST: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.SSH_KEY }}
-        with:
-          source: "."
-          target: "/home/Jose/"
-
-      - name: Executing remote command
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.SSH_KEY }}
-          script: |
-            cd ~/farm-tech-blog/
-            npm install 
-            pm2 start --name blog npm -- start
+  runs:
+    using: "docker"
+    image: "Dockerfile"
