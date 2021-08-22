@@ -1,0 +1,99 @@
+#commodities {
+	 width: 100%;
+}
+ #commodities #commodities-head {
+	 color: white;
+	 text-align: center;
+	 position: relative;
+	 background-image: url('../../assets/flea-market.jpg');
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -1;
+}
+ #commodities #commodities-head h1 {
+	 font-size: 60px;
+	 padding: 150px;
+}
+ #commodities #commodities-head #commodities-back {
+	 position: absolute;
+	 background-image: radial-gradient(at center center, #153243 0%, #1a6c7a 100%);
+	 opacity: 0.5;
+	 background-color: transparent;
+	 width: 100%;
+	 height: 100%;
+	 z-index: -1;
+}
+ #commodities h1, #commodities h2, #commodities h3 {
+	 margin: 0;
+}
+ #commodities h2 {
+	 font-size: 30px;
+	 font-weight: 800;
+}
+ #commodities h3 {
+	 font-size: 30px;
+}
+ #commodities #commodities-info {
+	 text-align: center;
+	 width: 100%;
+	 margin: 20px 0;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ #commodities #commodities-info h1 {
+	 font-size: 45px;
+	 margin: 50px 0;
+}
+ #commodities #commodities-info #filters {
+	 width: 100%;
+	 margin: 25px;
+}
+ #commodities #commodities-info #filters .filter {
+	 display: inline-block;
+	 margin: 20px;
+	 font-size: 26px;
+}
+ #commodities #commodities-info #filters .filter input {
+	 font-size: 20px;
+	 border: 2px solid #eaeaea;
+	 margin: 0 20px;
+	 padding: 5px;
+	 transition: all 0.2s ease;
+}
+ #commodities #commodities-info #filters .filter input:focus {
+	 border: 2px solid #1a6c7a;
+}
+ #commodities #commodities-info .table {
+	 display: flex;
+	 flex-direction: column;
+	 text-align: center;
+	 width: 90%;
+}
+ #commodities #commodities-info .table .table-head {
+	 display: flex;
+	 justify-content: space-evenly;
+	 margin: 10px;
+	 background-color: #b8e3eb;
+}
+ #commodities #commodities-info .table .table-head h2 {
+	 width: 20%;
+	 margin: 10px;
+}
+ #commodities #commodities-info .table .table-body {
+	 width: 100%;
+}
+ #commodities #commodities-info .table .table-body .table-row {
+	 display: flex;
+	 justify-content: space-evenly;
+	 width: 100%;
+	 margin: 10px 0;
+	 background-color: #e4e4e4;
+}
+ #commodities #commodities-info .table .table-body .table-row .table-data {
+	 width: 20%;
+	 margin: 15px 10px;
+}
