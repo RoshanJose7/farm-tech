@@ -18,7 +18,7 @@ function HomePage() {
     <div>
       <div id="home">
         <Carousel className="bg-dark">
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={10000000}>
             <img
               className="img d-block w-100"
               style={{
@@ -31,13 +31,13 @@ function HomePage() {
             <Carousel.Caption>
               <h3>"JAI JAWAN JAI KISSAN"</h3>
               <h5>WELCOME to Krishi-Tech</h5>
-              <p>
+              <h5>
                 Farmer are the backbone of our country,our work is to give
                 support to farmer in this technology era.
-              </p>
+              </h5>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1000000000}>
             <img
               className="img d-block w-100"
               style={{
@@ -48,51 +48,28 @@ function HomePage() {
               alt="Second slide"
             />
 
-            <Carousel.Caption
-              className="slide-2-caption"
-              style={{
-                left: "120px",
-                bottom: "40px",
-                width: "450px",
-              }}
-            >
-              <p style={{ fontSize: "30px", margin: "0" }}>
-                Small Farmers - Small Retailers
-              </p>
-              <p style={{ fontSize: "40px", display: "block", margin: "0" }}>
-                BIG BUISNESS
-              </p>
-              <p style={{ fontSize: "25px", margin: "0" }}>
-                To Find more Retailers:
-              </p>
+            <Carousel.Caption className="slide-2-caption">
+              <h2>Small Farmers - Small Retailers</h2>
+              <h2>BIG BUISNESS</h2>
+              <h4>To Find more Retailers:</h4>
               <TransparentButton title="Click Here" link="/contact" />
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1000000000}>
             <img
               className="img d-block w-100"
               src={slide3Pic}
               alt="Third slide"
             />
             <Carousel.Caption
+              className="slide-3-caption"
               style={{
-                left: "120px",
-                top: "50px",
-                width: "450px",
                 color: "black",
               }}
             >
-              <p style={{ fontSize: "40px", display: "block", margin: "0" }}>
-                One Stop Farm
-              </p>
-              <p style={{ fontSize: "28px", display: "block", margin: "0" }}>
-                We Farm, We Deliver, You Relax.
-              </p>
-              <div
-                style={{ position: "absolute", left: "120px", top: "420px" }}
-                className="button"
-                id="solid-button"
-              >
+              <h2>One Stop Farm</h2>
+              <h2>We Farm, We Deliver, You Relax.</h2>
+              <div className="button" id="solid-button">
                 <Link to="/consumer">Order Now</Link>
               </div>
             </Carousel.Caption>
